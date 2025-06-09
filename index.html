@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViaggiareInItalia.it - Scopri le Meraviglie d'Italia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-plane me-2"></i>Viaggiare In Italia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">
+                            <i class="fas fa-map-marker-alt me-1"></i>Destinazioni
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hotels">
+                            <i class="fas fa-bed me-1"></i>Hotel Low Cost
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">
+                            <i class="fas fa-star me-1"></i>Recensioni
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fas fa-envelope me-1"></i>Contatti
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="home" class="hero">
+        <div id="carouselExampleIndicators" class="carousel slide h-100" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <img src="https://tuscany360.it/wp-content/uploads/2021/11/florence-2.jpg" class="d-block w-100 h-100" alt="Firenze">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Scopri la Bellezza di Firenze</h1>
+                        <p class="lead">Immergiti nell'arte e nella cultura della culla del Rinascimento</p>
+                        <a href="#destinations" class="btn btn-custom btn-lg">Esplora Ora</a>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="https://www.viaggiaveloce.it/wp-content/uploads/airports_viaggiaveloce.jpg" class="d-block w-100 h-100" alt="Viaggi">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Viaggia ovunque</h1>
+                        <p class="lead">Le migliori destinazioni italiane ti aspettano</p>
+                        <a href="#hotels" class="btn btn-custom btn-lg">Prenota Ora</a>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="https://pinaywise.com/wp-content/uploads/2024/01/Olle-Hotel-1500x500.jpg" class="d-block w-100 h-100" alt="Hotel">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Hotel di Qualità</h1>
+                        <p class="lead">Comfort e convenienza per il tuo soggiorno perfetto</p>
+                        <a href="#hotels" class="btn btn-custom btn-lg">Scopri Offerte</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- Destinations Section -->
+    <div id="destinations" class="content-section">
+        <div class="container">
+            <h2 class="text-center section-title">Destinazioni Popolari</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 destination">
+                    <div class="card position-relative">
+                        <div class="price-tag">Da €50/notte</div>
+                        <img src="https://geaway.it/wp-content/uploads/2018/02/firenze-1-500x300.jpg" class="card-img-top" alt="Firenze">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i>Firenze
+                            </h5>
+                            <p class="card-text">Firenze, culla del Rinascimento, ti aspetta con i suoi musei, monumenti e l'atmosfera unica che solo questa città può offrire.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <small class="text-muted ms-1">(4.8)</small>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-sm">Scopri</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 destination">
+                    <div class="card position-relative">
+                        <div class="price-tag">Da €35/notte</div>
+                        <img src="https://images.winalist.com/blog/wp-content/uploads/2024/07/23143736/AdobeStock_167806246-1500x1000.jpeg" class="card-img-top" alt="Napoli">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i>Napoli
+                            </h5>
+                            <p class="card-text">Napoli, con il suo fascino autentico, la pizza napoletana e i tesori archeologici come Pompei ed Ercolano nelle vicinanze.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <small class="text-muted ms-1">(4.5)</small>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-sm">Scopri</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 destination">
+                    <div class="card position-relative">
+                        <div class="price-tag">Da €80/notte</div>
+                        <img src="https://www.ticonsiglio.com/wp-content/uploads/2019/05/milano.jpg" class="card-img-top" alt="Milano">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i>Milano
+                            </h5>
+                            <p class="card-text">Milano, capitale della moda e del design, dove modernità e tradizione si incontrano in perfetta armonia.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <small class="text-muted ms-1">(4.9)</small>
+                                </div>
+                                <a href="#" class="btn btn-primary btn-sm">Scopri</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hotels Section -->
+    <div id="hotels" class="content-section bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Hotel Low Cost</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 hotel">
+                    <div class="card position-relative">
+                        <div class="price-tag">€45/notte</div>
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Hotel Central Florence">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-bed text-primary me-2"></i>Hotel Central Florence
+                            </h5>
+                            <p class="card-text">Nel cuore di Firenze, a pochi passi dal Duomo. Camere moderne e confortevoli con tutti i servizi necessari.</p>
+                            <div class="mb-3">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <small class="text-muted ms-1">(4.2)</small>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-success"><i class="fas fa-wifi me-1"></i>Wi-Fi Gratuito</small>
+                                    <small class="text-success ms-3"><i class="fas fa-parking me-1"></i>Parcheggio</small>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-custom w-100">Prenota Ora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 hotel">
+                    <div class="card position-relative">
+                        <div class="price-tag">€38/notte</div>
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="B&B Napoli Centro">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-bed text-primary me-2"></i>B&B Napoli Centro
+                            </h5>
+                            <p class="card-text">Accogliente B&B nel centro storico di Napoli. Colazione italiana inclusa e atmosfera familiare.</p>
+                            <div class="mb-3">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <small class="text-muted ms-1">(4.7)</small>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-success"><i class="fas fa-coffee me-1"></i>Colazione Inclusa</small>
+                                    <small class="text-success ms-3"><i class="fas fa-map me-1"></i>Centro Storico</small>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-custom w-100">Prenota Ora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 hotel">
+                    <div class="card position-relative">
+                        <div class="price-tag">€65/notte</div>
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" class="card-img-top" alt="Milano Smart Hotel">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <i class="fas fa-bed text-primary me-2"></i>Milano Smart Hotel
+                            </h5>
+                            <p class="card-text">Hotel moderno vicino alla stazione centrale. Design contemporaneo e tecnologie all'avanguardia.</p>
+                            <div class="mb-3">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <small class="text-muted ms-1">(4.4)</small>
+                                </div>
+                                <div class="mt-2">
+                                    <small class="text-success"><i class="fas fa-train me-1"></i>Vicino Stazione</small>
+                                    <small class="text-success ms-3"><i class="fas fa-dumbbell me-1"></i>Palestra</small>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-custom w-100">Prenota Ora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div id="contact" class="content-section">
+        <div class="container">
+            <h2 class="text-center section-title">Contattaci</h2>
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="alert alert-success" id="successMessage">
+                        <i class="fas fa-check-circle me-2"></i>Messaggio inviato con successo! Ti risponderemo presto.
+                    </div>
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">
+                                        <i class="fas fa-user me-2"></i>Nome Completo
+                                    </label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">
+                                        <i class="fas fa-envelope me-2"></i>Email
+                                    </label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">
+                                <i class="fas fa-tag me-2"></i>Oggetto
+                            </label>
+                            <select class="form-select" id="subject" required>
+                                <option value="">Seleziona un argomento</option>
+                                <option value="info">Informazioni generali</option>
+                                <option value="booking">Prenotazioni</option>
+                                <option value="support">Assistenza</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">
+                                <i class="fas fa-comment me-2"></i>Messaggio
+                            </label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-custom btn-lg px-5">
+                                <i class="fas fa-paper-plane me-2"></i>Invia Messaggio
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5>Indirizzo</h5>
+                                    <p class="mb-0">Via Roma 123<br>20121 Milano, Italia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-phone fa-2x text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5>Telefono</h5>
+                                    <p class="mb-0">+39 02 1234 5678<br>Lun-Ven: 9:00-18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-envelope fa-2x text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5>Email</h5>
+                                    <p class="mb-0">info@viaggiareinitalia.com<br>booking@viaggiareinitalia.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5><i class="fas fa-plane me-2"></i>Viaggiare In Italia</h5>
+                    <p>La tua guida per scoprire le meraviglie d'Italia. Offriamo le migliori destinazioni e hotel a prezzi convenienti per rendere indimenticabile il tuo viaggio.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-decoration-none"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Destinazioni</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Roma</a></li>
+                        <li><a href="#">Firenze</a></li>
+                        <li><a href="#">Venezia</a></li>
+                        <li><a href="#">Milano</a></li>
+                        <li><a href="#">Napoli</a></li>
+                        <li><a href="#">Torino</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Servizi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Prenotazione Hotel</a></li>
+                        <li><a href="#">Guide Turistiche</a></li>
+                        <li><a href="#">Tour Organizzati</a></li>
+                        <li><a href="#">Trasporti</a></li>
+                        <li><a href="#">Assicurazione Viaggio</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Informazioni</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Chi Siamo</a></li>
+                        <li><a href="#">Termini e Condizioni</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Supporto</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Centro Assistenza</a></li>
+                        <li><a href="#">Contattaci</a></li>
+                        <li><a href="#">Cancellazioni</a></li>
+                        <li><a href="#">Modifiche</a></li>
+                        <li><a href="#">Recensioni</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 ViaggiareInItalia.com. Tutti i diritti riservati.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <i class="fas fa-shield-alt me-2"></i>Pagamenti Sicuri
+                        <i class="fas fa-lock ms-3 me-2"></i>SSL Certificato
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4" style="display: none; z-index: 1000;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
